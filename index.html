@@ -61,6 +61,15 @@ function image_myCanvas(){
 	var myCanvas_context = myCanvas_canvas.getContext("2d"); //This code draws context.
 	var popeyes = new Image(); //Creates image object
 	popeyes.src = "popeyes.jpg"; //Source of the image
+	popeyes.onload = function () {
+		var targetWidth = popeyes.width * 0.5;
+		var targetHeight = popeyes.height * 0.5;
+	myCanvas_context.drawImage(popeyes, 0.5, 0.5, targetWidth, targetHeight):
+	};
+}
+
+//This code clears the canvas.
+function clear_myCanvas(){
 	
 </script>
 
