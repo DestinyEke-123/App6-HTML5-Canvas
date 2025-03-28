@@ -59,12 +59,12 @@ function name_myCanvas(){
 function image_myCanvas(){
 	var myCanvas_canvas = document.getElementById("myCanvas"); //This code finds canvas element in the DOM.
 	var myCanvas_context = myCanvas_canvas.getContext("2d"); //This code draws context.
-	var popeyes = new Image(); //Creates image object
-	popeyes.src = "popeyes.jpg"; //Source of the image
-	popeyes.onload = function () {
-		var targetWidth = popeyes.width * 0.5;
-		var targetHeight = popeyes.height * 0.5;
-	myCanvas_context.drawImage(popeyes, 0.5, 0.5, targetWidth, targetHeight);
+	var roses = new Image(); //Creates image object
+	roses.src = "roses.jpeg"; //Source of the image
+	roses.onload = function () {
+		var targetWidth = roses.width * 0.5;
+		var targetHeight = roses.height * 0.5;
+	myCanvas_context.drawImage(roses, 0.5, 0.5, targetWidth, targetHeight);
 	};
 }
 
@@ -118,7 +118,7 @@ function clear_myCanvas(){
 	<button onclick="name_myCanvas()" class="w3-btn w3-black"> My name </button>
 
 	<!-- This code creates a button that outputs the image function when clicked. -->
-	<button onclick="image_myCanvas()" class="w3-btn w3-black"> Popeyes Image </button>
+	<button onclick="image_myCanvas()" class="w3-btn w3-black"> Roses Image </button>
 
 	<!-- This code creates a button that outputs the clear function when clicked. The style maintains a 10px distance for the button. -->
 	<br /> <button onclick="clear_myCanvas()" class="w3-btn w3-black" style="margin-top: 10px;"> Clear Canvas </button>
